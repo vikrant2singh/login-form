@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+<div class="form" style="background:transparent; margin:auto; width: 500px;" >
+  <h1 class="text-center">Login Form</h1>
+
+  <br />
+
+  <div class="floating" style="background:transparent; margin:auto; font-size: 150%; "class="form-group text-center" >
+    <input id="input__username" class="floating__input" name="username" type="email" placeholder="Username" required style="background:transparent; margin:auto; width:50%" >
+    <label for="input__username" class="floating__label" data-content="Username">
+    <span class="hidden--visually text-center" style="margin:auto ;text-align: center; font-size:150%;">
+      Username</span></label>
+  </div>
+
+  <div class="floating" style="background:transparent; margin:auto;font-size: 150% "class="form-group text-center" >
+    <input id="input__password" type="password" class="floating__input" name="password" type="text" placeholder="Password" required  minlength="8" maxlength="16" style="background:transparent; margin:auto; width:50%" >
+    <label for="input__password" class="floating__label" data-content="Password">
+    <span class="hidden--visually text-center">Password</span></label>
+  </div>
+<br/>
+  <div class="form-group form-check ">
+    <input type="checkbox" class="form-check-input" value="lsRememberMe" id="rememberMe" style="width: 10px; height: 10px;">  &nbsp
+    <label class="form-check-label" for="exampleCheck1" style="font-size:100%">Remeber Me!</label>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" value="Login" onclick="lsRememberMe()"  class="btn btn-primary">Login</button>
+  </div>
+</div>
+</form>
+<script src="index.js"></script>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+</body>
+</html>
